@@ -1,0 +1,642 @@
+/*
+Theme Name: Dashoguz Tourism
+Text Domain: turkmen.tours
+Version: 1.0
+Description: WP Theme for Dashoguz Tourism
+Author: Meret D.
+Author URI: http://meret.pro/
+Theme URI: http://meret.pro/themes/
+*/
+/*--------------------------------*/
+/* - Typography - Responsive/Breakpoints - */
+/* Breakpoint LG */
+/* Breakpoint MD */
+/* Breakpoint SM */
+/* Breakpoint XS */
+/* - Typography - Responsive/Breakpoints - */
+/*--------------------------------*/
+body {
+  min-width: 320px;
+  font-family: "Geometria";
+}
+
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+
+/*--------------------------------*/
+/* - Typography - Responsive/Breakpoints - */
+/* Breakpoint LG */
+/* Breakpoint MD */
+@media (max-width: 991px) {
+  .vcenter-md {
+    display: flex;
+    align-items: center;
+  }
+}
+/* Breakpoint SM */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  body p {
+    line-height: 1.4;
+  }
+}
+/* Breakpoint XS */
+/* - Typography - Responsive/Breakpoints - */
+/*--------------------------------*/
+.btn.btn-custom-orange {
+  background-color: #FF9900;
+  padding: 10px 20px;
+  line-height: 1;
+  border-radius: 5px;
+  text-transform: lowercase;
+  font-size: 16px;
+}
+.btn.btn-custom-orange::first-letter {
+  text-transform: uppercase;
+}
+
+/* Menu Button Animation */
+.animated-menu-icon {
+  width: 22px;
+  height: 16px;
+  position: relative;
+  margin: 0px;
+  margin-left: 10px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  float: right;
+}
+.animated-menu-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 9px;
+  left: 0;
+  background: #ffffff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.animated-menu-icon span:nth-child(1) {
+  top: 0px;
+}
+.animated-menu-icon span:nth-child(2) {
+  top: 7px;
+}
+.animated-menu-icon span:nth-child(3) {
+  top: 14px;
+}
+.animated-menu-icon.open span:nth-child(1) {
+  top: 7px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.animated-menu-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+.animated-menu-icon.open span:nth-child(3) {
+  top: 7px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+/* Sub-Menu Item Button Animation */
+.sub-menu-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  margin: 8px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  float: right;
+}
+.sub-menu-icon span {
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  border-radius: 9px;
+  left: 0;
+  background: white;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.sub-menu-icon span:nth-child(1) {
+  top: 8px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.sub-menu-icon span:nth-child(2) {
+  top: 8px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.sub-menu-icon.open span:nth-child(1) {
+  top: 7px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.sub-menu-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+/* ./Menu Button Animation */
+.main-header {
+  display: block;
+  background-color: #030057;
+  height: 100vh;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+.main-header a {
+  color: #ffffff;
+}
+.main-header a:hover {
+  opacity: 0.6;
+}
+.main-header .row {
+  height: 100%;
+}
+.main-header .main-header-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  color: #ffffff;
+  z-index: 0;
+  overflow: hidden;
+}
+.main-header .main-header-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+.main-header .main-header-content .tab-content {
+  height: 100%;
+}
+.main-header .main-header-content .tab-content .tab-pane {
+  height: 100%;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content {
+  width: 100%;
+  padding: 0 50px;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package-main-description {
+  font-weight: 400;
+  max-width: 600px;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package-main-description p {
+  margin-bottom: 40px;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package-main-description p.title {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package {
+  padding: 0 40px;
+  max-width: 400px;
+  margin: auto;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description {
+  border: 2px solid #ffffff;
+  border-bottom: 0;
+  padding: 10px 20px;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.promo-text, .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.seats {
+  font-size: 14px;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.promo-text {
+  float: left;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.seats {
+  text-align: right;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.destinations {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 30px 0 40px;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.duration {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price {
+  display: flex;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price p {
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-size: 14px;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price p.date, .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price p.price {
+  font-size: 16px;
+  font-weight: 600;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price .package-date,
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price .package-price {
+  border: 2px solid #ffffff;
+  padding: 10px 15px;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price .package-date {
+  width: 60%;
+  border-right: 0;
+}
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price .package-price {
+  width: 40%;
+}
+.main-header .side-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+}
+.main-header .side-bar .side-bar-menu {
+  width: 100%;
+}
+.main-header .side-bar .side-bar-menu .nav.nav-tabs {
+  flex-direction: column;
+  border: none;
+}
+.main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link {
+  color: #ffffff;
+  border: none;
+}
+.main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link:hover {
+  border: none;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  width: 0px;
+  height: 0px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 10px solid #ffffff;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link.active {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+.main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link.active:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link.active::after {
+  opacity: 1;
+}
+.main-header .side-bar .side-bar-social-icons {
+  position: absolute;
+  bottom: 10px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-header .side-bar .side-bar-social-icons a {
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+/*--------------------------------*/
+/* - Main Header - Responsive/Breakpoints - */
+/* Breakpoint LG */
+@media (max-width: 1199px) {
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package {
+    padding: 0 20px;
+  }
+}
+/* Breakpoint MD */
+@media (max-width: 991px) {
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package-main-description p {
+    margin-bottom: 20px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package-main-description p.title {
+    font-size: 35px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description {
+    padding: 10px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.destinations {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.duration {
+    margin-bottom: 0;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.promo-text {
+    float: none;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.seats {
+    text-align: left;
+    font-weight: 600;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price {
+    display: block;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price .package-date,
+.main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price .package-price {
+    width: 100%;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price .package-date {
+    border-right: 1px solid #ffffff;
+    border-bottom: 0;
+  }
+}
+/* Breakpoint SM */
+@media (max-width: 767px) {
+  .main-header {
+    height: 400px;
+  }
+  .main-header .side-bar {
+    height: 33px;
+    display: block;
+  }
+  .main-header .side-bar .side-bar-menu .nav.nav-tabs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link {
+    padding: 5px 30px;
+    padding-bottom: 7px;
+  }
+  .main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link::after {
+    border-top: 0px solid transparent;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.4);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    margin: auto;
+  }
+  .main-header .side-bar .side-bar-social-icons {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    background-color: #03013e;
+  }
+  .main-header .main-header-content {
+    height: 100%;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption {
+    display: block;
+    padding-top: 30px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package-main-description p {
+    margin-bottom: 20px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package-main-description p.title {
+    font-size: 25px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description {
+    padding: 7px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.destinations {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+}
+/* Breakpoint XS */
+@media (max-width: 575px) {
+  .main-header {
+    height: 500px;
+  }
+  .main-header .side-bar {
+    height: 65px;
+  }
+  .main-header .side-bar .side-bar-menu .nav.nav-tabs {
+    flex-direction: row;
+  }
+  .main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item {
+    width: 50%;
+  }
+  .main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link {
+    text-align: center;
+  }
+  .main-header .side-bar .side-bar-menu .nav.nav-tabs .nav-item .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content {
+    padding: 0 30px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package {
+    padding: 0;
+    padding-top: 30px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.promo-text {
+    float: left;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-description p.seats {
+    text-align: right;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price {
+    display: flex;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price p {
+    font-size: 12px;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price .package-date {
+    width: 60%;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff;
+  }
+  .main-header .main-header-content .tab-content .tab-pane .caption .caption-content .package .package-date-price .package-price {
+    width: 40%;
+  }
+}
+/* - Main Header - Responsive/Breakpoints - */
+/*--------------------------------*/
+.main-menu .navbar {
+  box-shadow: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.main-menu .navbar .navbar-brand {
+  padding: 8px 16px;
+}
+.main-menu .navbar .navbar-brand span {
+  display: block;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 22px;
+}
+.main-menu .navbar .navbar-brand span:nth-child(1) {
+  color: #FF9900;
+}
+.main-menu .navbar .navbar-toggler {
+  padding: 16px;
+}
+.main-menu .navbar ul.languages {
+  list-style: none;
+  padding: 13px 16px;
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+}
+.main-menu .navbar ul.languages li a {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  color: #ffffff;
+  padding: 5px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0;
+  border-right-width: 0;
+  width: 30px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.main-menu .navbar ul.languages li a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.main-menu .navbar ul.languages li:first-of-type a {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+.main-menu .navbar ul.languages li:last-of-type a {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+.main-menu .navbar ul.languages li.active a {
+  background-color: #ffffff;
+  color: #707070;
+}
+.main-menu .navbar ul.navbar-nav {
+  padding: 8px 0;
+}
+.main-menu .navbar ul.navbar-nav .nav-item .nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px 20px;
+}
+
+/*--------------------------------*/
+/* - Main Menu - Responsive/Breakpoints - */
+/* Breakpoint LG */
+/* Breakpoint MD */
+@media (max-width: 991px) {
+  .main-menu .navbar.active {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .main-menu .navbar ul.navbar-nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0 15px;
+  }
+  .main-menu .navbar ul.languages {
+    padding: 13px 0;
+  }
+}
+/* Breakpoint SM */
+@media (max-width: 767px) {
+  .main-menu {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+  }
+  .main-menu .navbar {
+    position: relative;
+    background-color: #03013e;
+  }
+  .main-menu .navbar.active {
+    background-color: #020125;
+  }
+  .main-menu .navbar .navbar-brand {
+    padding-top: 6px;
+  }
+  .main-menu .navbar .navbar-brand span {
+    font-size: 20px;
+  }
+}
+/* Breakpoint XS */
+/* - Main Menu - Responsive/Breakpoints - */
+/*--------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
