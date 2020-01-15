@@ -53,6 +53,9 @@
                 </div>
             </div>
         </footer>
+        <div class="back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </div>
         <?php wp_footer(); ?>
     </body>
 </html>

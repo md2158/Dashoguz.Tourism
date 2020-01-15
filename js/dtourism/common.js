@@ -50,5 +50,21 @@ $(document).ready(function ($) {
     // show footer form button on focus
     $('#footerForm').focus(function(){
         $('.btn-submit').removeClass('d-none');
+        $('html, body').animate({scrollTop: $(document).height() }, 1200, 'linear');
     });
+
+    // Back-to-top
+    $('.back-to-top').click(function() {
+        $('html, body').animate({scrollTop: '0px'}, 1200, 'linear');
+    });
+});
+
+$(document).scroll(function(){
+    var y=$(this).scrollTop();
+    if(y>600){
+        $('.back-to-top').addClass('active');
+    }
+    else{
+        $('.back-to-top').removeClass('active');
+    }
 });

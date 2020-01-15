@@ -46,6 +46,37 @@ footer {
     }
 }
 
+.back-to-top {
+	display: flex;
+	position: fixed;
+	bottom: -100px;
+	right: 15px;
+	background-color: $dark-blue;
+	height: 40px;
+	width: 40px;
+	border-radius: 3px;
+	opacity: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	@include transition-all(.2);
+	cursor: pointer;
+	&.active {
+		// display: flex;
+		bottom: 15px;
+		opacity: .6;
+	}
+	&:hover {
+		opacity: 1;
+	}
+	i {
+		display: inline-flex;
+		font-size: 20px;
+		// color: darken($blue-light, 15%);
+		color: #ffffff;
+	}
+}
+
 /*--------------------------------*/
 /* - Footer - Responsive/Breakpoints - */
 
@@ -72,7 +103,19 @@ footer {
 
 /* Breakpoint SM */
 @media (max-width: 767px) {
-   
+    .back-to-top {
+        height: 30px;
+        width: 30px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        i {
+            font-size: 16px;
+        }
+        &.active {
+            bottom: 35px;
+        }
+    }
 }
 
 /* Breakpoint XS */
