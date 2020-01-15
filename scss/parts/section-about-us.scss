@@ -1,0 +1,45 @@
+.about-us {
+    overflow: hidden;
+    padding: 40px 0;
+    .testimonies {
+        padding-top: 20px;
+        .testimony {
+            margin-bottom: 30px;
+            .author {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                .author-image {
+                    margin-right: 10px;
+                    img {
+                        height: 50px;
+                        width: auto;
+                        border-radius: 100%;
+                    }
+                }
+                .author-info {
+                    p {
+                        margin-bottom: 0;
+                        line-height: 1;
+                        &.author-name {
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                        }
+                        &.author-country {}
+                    }
+                }
+            }
+        }
+    }
+    .traveler-gallery {
+        img {
+            @include transition-all(.2);
+            &:hover {
+                transform: scale(1.2);
+                z-index: 1;
+                position: relative;
+                @include box-shadow(0,3,5,.8);
+            }
+        }
+    }
+}

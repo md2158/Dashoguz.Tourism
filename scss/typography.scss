@@ -1,0 +1,55 @@
+p {
+    font-weight: 400;
+    &.section-title {
+        font-size: 34px;
+        font-weight: 800;
+    }
+}
+
+a {
+    &.orange-link {
+        color: $orange;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+}
+
+/*--------------------------------*/
+/* - Typography - Responsive/Breakpoints - */
+
+/* Breakpoint LG */
+@media (max-width: 1199px) {
+
+}
+
+/* Breakpoint MD */
+@media (max-width: 991px) {
+   
+}
+
+/* Breakpoint SM */
+@media (max-width: 767px) {
+    p {
+        &.section-title {
+            font-size: 24px;
+            line-height: 1;
+        }
+    }
+}
+
+/* Breakpoint XS */
+@media (max-width: 575px) {
+   a {
+       &.orange-link {
+           margin-top: -5px;
+       }
+   }
+}
+
+@media (max-width: 379px) {
+    
+}
+
+/* - Typography - Responsive/Breakpoints - */
+/*--------------------------------*/

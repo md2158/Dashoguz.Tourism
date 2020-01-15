@@ -1,0 +1,108 @@
+.special-days {
+    padding: 80px 0 40px;
+    overflow: hidden;
+}
+.tour-packages {
+    padding: 40px 0;
+    overflow: hidden;
+}
+.special-days,
+.tour-packages {
+    .special-days-item {
+        img {
+            width: 100%;
+            margin-bottom: 15px;
+            cursor: pointer;
+            @include box-shadow(0,5,20,.35);
+            @include transition-all(.2);
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+        a {
+            color: $black;
+            display: block;
+            &.sd-title {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1;
+                margin-bottom: 0;
+                @include transition-all(.2);
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+        p {
+            &.sd-place {
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+        &.main {
+            width: 290px;
+            p {
+                &.sd-title {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------------*/
+/* - Section Special Days - Responsive/Breakpoints - */
+
+/* Breakpoint LG */
+@media (max-width: 1199px) {
+
+}
+
+/* Breakpoint MD */
+@media (max-width: 991px) {
+    .special-days,
+    .tour-packages {
+        .special-days-item {
+            &.main {
+                width: auto;
+            }
+        }
+    }
+}
+
+/* Breakpoint SM */
+@media (max-width: 767px) {
+   
+}
+
+/* Breakpoint XS */
+@media (max-width: 575px) {
+    .special-days {
+        padding: 20px 0;
+    }
+    .tour-packages {
+        padding: 20px 0;
+    }
+    .special-days,
+    .tour-packages {
+        .special-days-item {
+            a {
+                &.sd-title {
+                    font-size: 14px;
+                }
+            }
+            p {
+                &.sd-place {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 379px) {
+    
+}
+
+/* - Section Special Days - Responsive/Breakpoints - */
+/*--------------------------------*/

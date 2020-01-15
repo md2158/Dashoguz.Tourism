@@ -1,0 +1,117 @@
+footer {
+    background-color: $dark-blue;
+    padding: 40px 0 50px;
+    p {
+        color: #ffffff;
+        &.footer-title {
+            font-weight: 600;
+        }
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+            line-height: 1;
+            a {
+                display: block;
+                line-height: 1;
+                padding: 5px 0;
+                color: #ffffff;
+                font-weight: 400;
+            }
+        }
+    }
+    .footer-contacts {
+        p {
+            font-size: 24px;
+            font-weight: 900;
+            color: $orange;
+            margin-bottom: 5px;
+        }
+        .md-form {
+            margin: 0;
+            .form-control {
+                color: $orange;
+                border-color: $orange;
+                &:focus {
+                    border-color: $orange;
+
+                }
+            }
+            label {
+                color: $orange;
+            }
+        }
+    }
+}
+
+/*--------------------------------*/
+/* - Footer - Responsive/Breakpoints - */
+
+/* Breakpoint LG */
+@media (max-width: 1199px) {
+
+}
+
+/* Breakpoint MD */
+@media (max-width: 991px) {
+    footer {
+        .footer-contacts {
+            display: flex;
+            align-items: center;
+            p {
+                margin-right: 30px;
+            }
+            .md-form {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+/* Breakpoint SM */
+@media (max-width: 767px) {
+   
+}
+
+/* Breakpoint XS */
+@media (max-width: 575px) {
+    footer {
+        padding-bottom: 80px;
+        .footer-contacts {
+            flex-direction: column;
+            p {
+                margin-right: 0;
+            }
+            .md-form {
+                text-align: center;
+                margin-right: 0;
+                label {
+                    right: 0;
+                    &.active {
+                        // color: red!important;
+                        width: 100px;
+                        left: 50%;
+                        margin-left: -40px;
+                    }
+                }
+            }
+        }
+        ul {
+            text-align: center;
+        }
+        p {
+            &.footer-title {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 379px) {
+    
+}
+
+/* - Footer - Responsive/Breakpoints - */
+/*--------------------------------*/

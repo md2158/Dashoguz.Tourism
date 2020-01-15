@@ -1,0 +1,47 @@
+body {
+    min-width: 320px;
+    font-family: 'Geometria';
+    color: $black;
+}
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+/*--------------------------------*/
+/* - Typography - Responsive/Breakpoints - */
+
+/* Breakpoint LG */
+@media (max-width: 1199px) {
+
+}
+
+/* Breakpoint MD */
+@media (max-width: 991px) {
+   .vcenter-md {
+       display: flex;
+       align-items: center;
+   }
+}
+
+/* Breakpoint SM */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        p {
+            line-height: 1.4;
+        }
+    }
+}
+
+/* Breakpoint XS */
+@media (max-width: 575px) {
+    
+}
+
+@media (max-width: 379px) {
+    
+}
+
+/* - Typography - Responsive/Breakpoints - */
+/*--------------------------------*/

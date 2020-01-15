@@ -1,4 +1,4 @@
-<di class="main-header">
+<section class="main-header">
     <div class="row no-gutters">
         <div class="col-lg-2 col-md-3 col-12 side-bar">
             <div class="side-bar-menu">
@@ -37,7 +37,7 @@
                                 <div class="col-sm-7 col-12">
                                     <div class="package-main-description animated fadeInLeft">
                                         <p class="title">Five Stans' Culture on Silk Road</p>
-                                        <p>Central Asia's rarely seen true wonderful archs and places are presented for foreigners by Dashoguz Syyahat. So let's take a look and book flight</p>
+                                        <p class="title-desc">Central Asia's rarely seen true wonderful archs and places are presented for foreigners by Dashoguz Syyahat. So let's take a look and book flight</p>
                                         <a href="#!" class="btn btn-custom-orange m-0 mr-2">Book a tour</a>
                                         <a href="#!">More Info</a>
                                     </div>
@@ -72,9 +72,9 @@
                             <div class="row no-gutters">
                                 <div class="col-sm-7 col-12">
                                     <div class="package-main-description animated fadeInLeft">
-                                        <p class="title">Marmer Beauty Ashgabat</p>
-                                        <p>Central Asia's rarely seen true wonderful archs and places are presented for foreigners by Dashoguz Syyahat. So let's take a look and book flight</p>
-                                        <a href="#!" class="btn btn-custom-orange">Book a tour</a>
+                                        <p class="title">Marble Beauty Ashgabat</p>
+                                        <p class="title-desc">Central Asia's rarely seen true wonderful archs and places are presented for foreigners by Dashoguz Syyahat. So let's take a look and book flight</p>
+                                        <a href="#!" class="btn btn-custom-orange m-0 mr-2">Book a tour</a>
                                         <a href="#!">More Info</a>
                                     </div>
                                 </div>
@@ -109,8 +109,8 @@
                                 <div class="col-sm-7 col-12">
                                     <div class="package-main-description animated fadeInLeft">
                                         <p class="title">Accross Tropical Heaven</p>
-                                        <p>Central Asia's rarely seen true wonderful archs and places are presented for foreigners by Dashoguz Syyahat. So let's take a look and book flight</p>
-                                        <a href="#!" class="btn btn-custom-orange">Book a tour</a>
+                                        <p class="title-desc">Central Asia's rarely seen true wonderful archs and places are presented for foreigners by Dashoguz Syyahat. So let's take a look and book flight</p>
+                                        <a href="#!" class="btn btn-custom-orange m-0 mr-2">Book a tour</a>
                                         <a href="#!">More Info</a>
                                     </div>
                                 </div>
@@ -145,8 +145,8 @@
                                 <div class="col-sm-7 col-12">
                                     <div class="package-main-description animated fadeInLeft">
                                         <p class="title">History and Gas Crater</p>
-                                        <p>Central Asia's rarely seen true wonderful archs and places are presented for foreigners by Dashoguz Syyahat. So let's take a look and book flight</p>
-                                        <a href="#!" class="btn btn-custom-orange">Book a tour</a>
+                                        <p class="title-desc">Central Asia's rarely seen true wonderful archs and places are presented for foreigners by Dashoguz Syyahat. So let's take a look and book flight</p>
+                                        <a href="#!" class="btn btn-custom-orange m-0 mr-2">Book a tour</a>
                                         <a href="#!">More Info</a>
                                     </div>
                                 </div>
@@ -178,4 +178,4 @@
             
         </div>
     </div>
-</di>
+</section>

@@ -1,0 +1,15 @@
+.btn {
+    &.btn-custom-orange {
+        background-color: $orange;
+        padding: 10px 20px;
+        line-height: 1;
+        border-radius: 5px;
+        text-transform: lowercase;
+        font-size: 16px;
+        font-weight: 500;
+        opacity: 1!important;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+}

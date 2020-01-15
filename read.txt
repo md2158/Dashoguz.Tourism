@@ -1,2 +1,2 @@
-sass --watch scss/_custom-styles.scss style.css
-sass scss/_custom-styles.scss style.css
+sass --watch scss/styles.scss style.css
+sass scss/styles.scss style.css

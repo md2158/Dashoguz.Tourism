@@ -1,0 +1,22 @@
+/*
+Theme Name: Dashoguz Tourism
+Text Domain: turkmen.tours
+Version: 1.0
+Description: WP Theme for Dashoguz Tourism
+Author: Meret D.
+Author URI: http://meret.pro/
+Theme URI: http://meret.pro/themes/
+*/
+
+@import 'mixin.scss';
+@import 'body.scss';
+@import 'typography.scss';
+@import 'buttons.scss';
+@import 'animations.scss';
+@import 'parts/main-header.scss';
+@import 'parts/main-menu.scss';
+@import 'parts/section-discover.scss';
+@import 'parts/section-special-days.scss';
+@import 'parts/section-travel-blog.scss';
+@import 'parts/section-about-us.scss';
+@import 'footer.scss';

@@ -1,0 +1,75 @@
+.travel-blog {
+    background-color: rgba(170,195,254,.1);
+    padding: 40px 0;
+    overflow: hidden;
+    .tb-item {
+        .tb-img {
+            margin-bottom: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        a {
+            display: block;
+            line-height: 1;
+            color: $black;
+            @include transition-all(.2);
+            &.tb-title {
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            &:hover {
+                color: $orange;
+            }
+        }
+        p {
+            margin-bottom: 0;
+            line-height: 1;
+            &.tb-date {
+                font-size: 12px;
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------------*/
+/* - Section Travel Blog - Responsive/Breakpoints - */
+
+/* Breakpoint LG */
+@media (max-width: 1199px) {
+
+}
+
+/* Breakpoint MD */
+@media (max-width: 991px) {
+   
+}
+
+/* Breakpoint SM */
+@media (max-width: 767px) {
+    .travel-blog {
+        padding: 20px 0;
+        .tb-item {
+            a {
+                &.tb-title {
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}
+
+/* Breakpoint XS */
+@media (max-width: 575px) {
+   
+}
+
+@media (max-width: 379px) {
+    
+}
+
+/* - Section Travel Blog - Responsive/Breakpoints - */
+/*--------------------------------*/

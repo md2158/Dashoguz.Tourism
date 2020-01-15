@@ -1,0 +1,68 @@
+.discover {
+    padding: 80px 0 40px;
+    overflow: hidden;
+    .dsc-gallery-item {
+        height: 230px;
+        cursor: pointer;  
+        img {
+            margin-bottom: 15px;
+            width: 100%;
+            @include box-shadow(0,5,20,.35);
+            @include transition-all(.4);
+        }
+        p {
+            &.dsc-title {
+                display: none;
+                font-size: 26px;
+                font-weight: 800;
+                line-height: 1;
+            }
+        }
+        &:hover {
+            img {
+                margin-top: -20px;
+            }
+            p {
+                &.dsc-title {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------------*/
+/* - Section Discover - Responsive/Breakpoints - */
+
+/* Breakpoint LG */
+@media (max-width: 1199px) {
+
+}
+
+/* Breakpoint MD */
+@media (max-width: 991px) {
+    .discover {
+        .dsc-gallery-item {
+            height: 100%;
+        }
+    }
+}
+
+/* Breakpoint SM */
+@media (max-width: 767px) {
+   
+}
+
+/* Breakpoint XS */
+@media (max-width: 575px) {
+    .discover {
+        padding: 80px 0 20px;
+    }
+}
+
+@media (max-width: 379px) {
+    
+}
+
+/* - Section Discover - Responsive/Breakpoints - */
+/*--------------------------------*/
