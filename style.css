@@ -819,7 +819,7 @@ a.orange-link {
 /* Breakpoint XS */
 @media (max-width: 575px) {
   .discover {
-    padding: 80px 0 0;
+    padding: 100px 0 0;
   }
 }
 /* - Section Discover - Responsive/Breakpoints - */
