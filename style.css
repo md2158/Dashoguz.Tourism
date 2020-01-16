@@ -484,6 +484,14 @@ a.orange-link {
     bottom: 0;
     z-index: 1;
     background-color: #030057;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .main-header .side-bar .side-bar-social-icons a {
+    padding: 5px 10px;
+    line-height: 1;
   }
   .main-header .main-header-content {
     height: 100%;
@@ -783,10 +791,10 @@ a.orange-link {
   font-weight: 800;
   line-height: 1;
 }
-.discover .dsc-gallery-item:hover img {
+.discover .dsc-gallery-item.active img, .discover .dsc-gallery-item:hover img {
   margin-top: -20px;
 }
-.discover .dsc-gallery-item:hover p.dsc-title {
+.discover .dsc-gallery-item.active p.dsc-title, .discover .dsc-gallery-item:hover p.dsc-title {
   display: block;
 }
 
@@ -795,15 +803,23 @@ a.orange-link {
 /* Breakpoint LG */
 /* Breakpoint MD */
 @media (max-width: 991px) {
-  .discover .dsc-gallery-item {
-    height: 100%;
+  .discover {
+    padding-bottom: 0;
   }
 }
 /* Breakpoint SM */
+@media (max-width: 767px) {
+  .discover .dsc-gallery-item img {
+    margin-bottom: 5px;
+  }
+  .discover .dsc-gallery-item p.dsc-title {
+    font-size: 16px;
+  }
+}
 /* Breakpoint XS */
 @media (max-width: 575px) {
   .discover {
-    padding: 80px 0 20px;
+    padding: 80px 0 0;
   }
 }
 /* - Section Discover - Responsive/Breakpoints - */

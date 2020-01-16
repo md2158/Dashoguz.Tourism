@@ -47,6 +47,24 @@ $(document).ready(function ($) {
         }
         setInterval(tabChange, 7000);
     }
+    if($(window).width() < 992){
+        var imgHeight = $('.dsc-gallery-item img').height();
+        $('.dsc-gallery-item').css('height', imgHeight+30+'px');
+    }
+    if($(window).width() < 576){
+        var pWaypoint = $('.dsc-gallery-item').waypoint(function(direction) {
+            if(direction == 'down') {
+                setTimeout(function(){ $('.dsc-gallery-item:first').addClass('active'); }, 1500);
+                setTimeout(function(){ $('.dsc-gallery-item:first').removeClass('active'); }, 3500);
+            }
+            else {
+               $('.dsc-gallery-item').removeClass('active');
+            }
+        }, {
+            offset: '90%'
+        });
+
+    }
     // show footer form button on focus
     $('#footerForm').focus(function(){
         $('.btn-submit').removeClass('d-none');
@@ -59,6 +77,7 @@ $(document).ready(function ($) {
     });
 });
 
+// on scroll add active class to back-to-top
 $(document).scroll(function(){
     var y=$(this).scrollTop();
     if(y>600){
