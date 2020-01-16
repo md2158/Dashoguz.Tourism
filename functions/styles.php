@@ -5,7 +5,7 @@ function theme_enqueue_scripts() {
     wp_enqueue_style( 'Bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
     wp_enqueue_style( 'MDB', get_template_directory_uri() . '/css/mdb.min.css' );
     wp_enqueue_style( 'Font-Geometria', get_template_directory_uri() . '/font/geometria/stylesheet.css?v=0.1' );
-    wp_enqueue_style( 'Style', get_template_directory_uri() . '/style.css?v=0.2' );
+    wp_enqueue_style( 'Style', get_template_directory_uri() . '/style.css?v=0.3' );
     wp_enqueue_style( 'Swiper', get_template_directory_uri() . '/css/swiper.min.css' );
     wp_enqueue_style( 'Fancybox_css', get_template_directory_uri() . '/css/fancybox.css' );
     // wp_enqueue_style( 'Tachil-Web-Icons', get_template_directory_uri() . '/font/tachil-icons/styles.css' );
