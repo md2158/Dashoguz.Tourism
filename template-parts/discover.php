@@ -9,20 +9,20 @@
                 <p class=" wow fadeInUp">Wonderfull culture, nature and people. Discover amazing Turkmenistan! </p>
             </div>
             <div class="col-lg-2 col-4">
-                <div class="dsc-gallery-item wow fadeInDown" data-wow-delay="0.5s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/sample-image/discover-01.jpg" alt="">
+                <div class="dsc-gallery-item">
+                    <img class="wow fadeInDown" data-wow-delay="0.5s" src="<?php echo get_template_directory_uri();?>/img/sample-image/discover-01.jpg" alt="">
                     <p class="dsc-title animated fadeInDown">Culture</p>
                 </div>
             </div>
             <div class="col-lg-2 col-4">
-                <div class="dsc-gallery-item wow fadeInUp" data-wow-delay="0.7s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/sample-image/discover-02.jpg" alt="">
+                <div class="dsc-gallery-item">
+                    <img class="wow fadeInUp" data-wow-delay="0.7s" src="<?php echo get_template_directory_uri();?>/img/sample-image/discover-02.jpg" alt="">
                     <p class="dsc-title animated fadeInDown">Nature</p>
                 </div>
             </div>
             <div class="col-lg-2 col-4">
-                <div class="dsc-gallery-item wow fadeInDown" data-wow-delay="0.9s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/sample-image/discover-03.jpg" alt="">
+                <div class="dsc-gallery-item">
+                    <img class="wow fadeInDown" data-wow-delay="0.9s" src="<?php echo get_template_directory_uri();?>/img/sample-image/discover-03.jpg" alt="">
                     <p class="dsc-title animated fadeInDown">People</p>
                 </div>
             </div>
