@@ -756,9 +756,6 @@ a.orange-link {
   .main-menu .navbar.active {
     background-color: #020125;
   }
-  .main-menu .navbar .navbar-brand {
-    padding-top: 6px;
-  }
   .main-menu .navbar .navbar-brand span {
     font-size: 20px;
   }
